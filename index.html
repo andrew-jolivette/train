@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Train Time!</title>
+
+  <!-- Bootstrap Style Sheet  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Moment JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+
+<body style="background-color: #984b43">
+  <div class="jumbotron" style="background-color:  #18121e">
+    <h1 class="display-4 text-center" style="color: #eac67a">Train Time!</h1>
+    <h1 class="lead text-center" style="color: #eac67a">Choo-choo! Here comes the train!</h1>
+  </div>
+  <div class="container">
+    <header class="pt-1 pb-1 pl-3 text-light font-weight-bold border-top border-right border-left" style="background: #233237">Current Train Schedule</header>
+      <table class="table border p-3 bg-light">
+        <thead>
+          <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
+          </tr>
+        </thead>
+        <tbody id="trainData">
+          <!-- <tr>
+            <td>Hogwarts Express</th>
+            <td>Hogwarts</td>
+            <td>30m</td>
+            <td>8:00 AM</td>
+            <td>13</td>
+          </tr> -->
+        </tbody>
+      </table>
+      <header class="pt-1 pb-1 pl-3 text-light font-weight-bold border-top border-right border-left" style="background: #233237">Add Train</header>
+      <form class="border p-3 bg-light">
+        <div class="form-group">
+          <label for="train-name">Train Name</label>
+          <input type="text" class="form-control" id="train-name" placeholder="ex. Hogwarts Express">
+        </div>
+        <div class="form-group">
+          <label for="train-destination">Destination</label>
+          <input type="text" class="form-control" id="train-destination" placeholder="ex. San Francisco">
+        </div>
+        <div class="form-group">
+          <label for="train-time">First Train Time (HH:mm - AM/PM)</label>
+          <input type="time" class="form-control" id="train-time">
+        </div>
+        <div class="form-group">
+          <label for="train-interval">Frequency (min)</label>
+          <input type="number" class="form-control" id="train-interval">
+        </div>
+        <button type="submit" class="btn btn-primary" id="trainSubmit">Submit</button>
+      </form>
+  </div>
+
+
+
+
+  <!-- Bootstrap & jQuery libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- custom js -->
+<script src="./assets/javascript/app.js"></script>
+</body>
+</html>
