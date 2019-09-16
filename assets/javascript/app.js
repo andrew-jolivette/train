@@ -82,9 +82,15 @@ function renderSched() {
 function clear() {
   database.ref().set(null)
   renderSched();
+  databaseKeys = 0;
 }
 
 $('#schedClear').on('click', () => {
   event.preventDefault();
   clear()
 })
+
+var timeZero = false;
+function checkTime() {
+  return;
+}
